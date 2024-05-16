@@ -1,0 +1,146 @@
+.admin_order-info-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_info-user-item:first-child {
+    margin-left: -2px;
+}
+
+.order_info-user-item:last-child {
+    margin-right: -2px;
+}
+
+.order_info-user-item {
+    width: 33.3333%;
+    margin: 0 8px;
+}
+
+.info_user-item-user,
+.info_user-item-delivery,
+.info_user-item-pay {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    min-height: 190px;
+    font-size: 16px;
+}
+
+.info-item-user-status {
+    outline: none;
+}
+
+.info_user-item-user p{
+    margin-bottom: 8px;
+}
+
+.info_user-item-delivery p {
+    margin: 4px 0;
+}
+
+.admin_order-info-product {
+    background-color: #fff;
+    margin: 16px 0;
+    border-radius: 4px;
+}
+
+.order-info-product-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.order-info-product-heading p:first-child {
+    width: 50%;
+}
+
+.order-info-product-heading p:last-child {
+    text-align: right;
+}
+
+.order-info-product-heading p {
+    font-size: 20px;
+    margin: 0;
+    width: calc(50% / 4);
+}
+
+.order-info-product-body-container {
+    display: flex;  
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.info_product-left, .info_product-right {
+    display: flex;
+    width: 50%;
+}
+
+.info_product-left img {
+    width: 140px;
+    height: 100px;
+    display: block;
+    margin-right: 16px;
+}
+
+.info_product-left div h2 {
+    font-size: 20px;
+}
+
+.info_product-right p {
+    width: calc(50% / 4);
+    flex: 1;
+    font-size: 18px;
+}
+
+.info_product-right p:last-child {
+    text-align: right;
+}
+
+.order-info-product-footer {
+    padding: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.order-info-product-footer div {
+    display: flex;
+}
+
+.order-info-product-footer div:last-child span {
+    font-size: 20px;
+    color: red;
+}
+
+.order-info-product-footer div p {
+    margin-right: 50px;
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+}
+
+.order-info-product-footer div span {
+    width: calc(50% / 4);
+    text-align: right;
+    font-size: 16px;
+}
+
+.admin_order-btn-save {
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+
+.admin_order-btn-save button {
+    border: 1px solid blue;
+    color: blue;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 8px 16px;
+}
+
+.admin_order-btn-save button:hover {
+    background-color: #ccc;
+}

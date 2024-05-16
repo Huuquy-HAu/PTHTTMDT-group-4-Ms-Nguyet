@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.admin-category-container {
+  padding: 5px 20px;
+}
+
+.admin-category-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin-category-header-left {
+  width: 20%;
+}
+
+.admin-category-header-left .admin-category-header-left-product {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.admin-category-header-left-progress {
+  margin-bottom: 0.4rem;
+  display: flex;
+}
+
+.admin-category-header-left-progress .admin-category-header-left-line-green {
+  background: #8bdca2;
+  height: 0.2rem;
+  border-radius: 3px;
+  width: 20%;
+}
+
+.admin-category-header-left-progress .admin-category-header-left-line-white {
+  background: #f9f9f9;
+  height: 0.2rem;
+  width: 80%;
+  border-radius: 3px;
+}
+
+.admin-category-header-left .question-icon {
+  margin-left: 0.3rem;
+}
+
+.admin-category-header-right {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.admin-category-header-right button {
+  background-color: #ee4d2d;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 8px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.admin-category-header-right button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.admin-category-container .admin-category-body {
+  border: 1px solid grey;
+}
+
+.admin-category-body {
+  padding: 8px 8px 0 8px;
+}
+
+.admin-category-body-heading {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.admin-category-body-heading div {
+  width: 25%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.admin-category-body-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.admin-category-body-item div {
+  text-align: center;
+  width: 25%;
+  margin: 12px 0;
+}
+
+.admin-category-body-item:last-child {
+  border: none;
+}
+
+.admin-category-item-img img {
+  width: 40%;
+}
+
+.admin-category-item-handle-update {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background-color: #ee4d2d;
+  color: white;
+  border-radius: 2px;
+}
+
+.admin-category-item-handle-update:hover,
+.admin-category-item-handle-delete:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: black;
+}
+
+#admin_category-modal-name {
+  width: 100%;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  /* outline: none; */
+  border: 1px solid grey;
+}
+
+.ant-image-preview-img {
+  max-width: 90%;
+  max-height: 90%;
+  /* width: 50%; */
+}

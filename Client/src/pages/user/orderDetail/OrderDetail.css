@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.order-detail {
+    width: 100%;
+    background-color: #fff;
+}
+
+.order-detail__status-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-detail__status-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.icon-order-order,
+.icon-order-paid,
+.icon-order-problem,
+.icon-order-rating,
+.icon-order-received,
+.icon-order-shipping {
+    stroke: currentColor;
+}
+
+.order-detail__status-content .shopee-svg-icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    fill: currentColor;
+    position: relative;
+}
+
+/* Payment */
+.order-detail__payment {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFCF5;
+    padding: 20px;
+}
+
+.order-detail__payment button {
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.payment-left {
+    width: 70%;
+}
+
+.payment-left span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.payment-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.payment-right button {
+    border: none;
+    cursor: pointer;
+}
+
+.pay-btn {
+    background-color: red;
+    color: #fff;
+}
+
+.payment-right .other-btn:hover {
+    background-color: rgba(0, 0, 0, .09);
+}
+
+.pay-btn:hover {
+    background-color: #d73211;
+}
+
+/* Address */
+.order-detail__address-content {
+    padding: 20px 40px;
+}
+
+.order-detail__address-content .address-title {
+    font-size: 20px;
+}
+
+.address-content-detail .edit-btn {
+    margin-left: 20px;
+}
+
+.edit-btn {
+    padding: 0 15px;
+    border: none;
+    opacity: 0.8;
+    padding: 5px 15px;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.back-text {
+    margin-left: 4px;
+}
+
+.order-status {
+    padding-left: 10px;
+}
+
+.order-status-canceled {
+    color: red;
+}
+
+.order-status-done {
+    color: #2dc258;
+}
+
+
+.id-order {
+    padding-right: 10px;
+    border-right: 2px solid #000;
+}
+
+.order-header-left,
+.order-header-right {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    ;
+}
+
+.order-header-left:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: red;
+}
+
+/* Status */
+.stepper__step-icon--finish {
+    border-color: #2dc258;
+    color: #2dc258;
+}
+
+.stepper__step-icon {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.875rem;
+    border: 4px solid #e0e0e0;
+    color: #e0e0e0;
+    background-color: #fff;
+    transition: background-color .3s cubic-bezier(.4, 0, .2, 1) .7s, border-color .3s cubic-bezier(.4, 0, .2, 1) .7s, color .3s cubic-bezier(.4, 0, .2, 1) .7s;
+}
+
+.border-top {
+    height: 0.1875rem;
+    width: 100%;
+    background-position-x: -1.875rem;
+    background-size: 7.25rem 0.1875rem;
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+}
+
+
+/* Product */
+
+.order-detail__product {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.listProduct-infor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-product-detail__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.order-product-detail__name {
+    width: 90%;
+    padding: 0 30px;
+}
+
+.order-product-detail__img {
+    width: 10%;
+}
+
+.order-product-detail__price {
+    width: 20%;
+}
+
+.order-product-detail__price span {
+    display: block;
+    text-align: right;
+    color: #EE4D2D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.order-product-detail__category {
+    opacity: 0.6;
+}
+
+.order-list__total {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.order-list-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 0 40px;
+}
+
+.order-list-item:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+
+.order-list__total p,
+.order-list__total span {
+    padding: 10px 0;
+    text-align: right;
+}
+
+.order-list__total p {
+    border-right: 1px solid #ccc;
+    width: 85%;
+    height: inherit;
+    padding-right: 40px;
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.order-list__total span {
+    color: red;
+    font-size: 18px;
+}
+
+.order-list__total sup {
+    top: -0.3em;
+    margin-right: 1px;
+}
+
+.inputName {
+    width: min-content;
+}
+
+.menu-list .ant-menu-light .ant-menu-submenu-title:hover,
+.menu-list .ant-menu-light .ant-menu-item:hover,
+.menu-list .ant-menu-submenu:hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow,
+.menu-list .ant-menu-active {
+    color: #EE4D2D;
+}
+
+.menu-list .ant-menu-item-selected a,
+.ant-menu-item-selected a:hover,
+.menu-list .ant-menu-item-selected,
+.menu-list .ant-menu-submenu-selected {
+    color: #EE4D2D;
+}
+
+
+
+.src-pages-ChatWindow-index__header--USXSl {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.src-pages-ChatWindow-index__logo-wrapper--1rM8W {
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.src-pages-ChatWindow-index__logo--3ygfr {
+    width: 44px;
+    color: #ee4d2d;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.src-pages-ChatWindow-index__unread--3ljEi {
+    display: flex;
+    font-size: 12px;
+    margin-left: 8px;
+    align-items: center;
+    color: #ee4d2d;
+}
+
+.src-pages-ChatWindow-index__operator-wrapper--Wcn9j {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+
+.src-pages-ChatWindow-index__operator-item-wrapper--2_9Si {
+    margin-left: 16px;
+}
+
+.src-pages-ChatWindow-index__operator-item-wrapper--2_9Si {
+    margin-left: 16px;
+}
+
+.src-pages-ChatWindow-index__plate--2ADRp img {
+    width: 100%;
+    height: inherit;
+}
+
+.src-pages-ChatWindow-index__title--200qt {
+    text-align: center;
+}
+
+.chat-body {
+    display: flex;
+}
+
+.chat-container {
+    width: 40%;
+}
+
+.body-left {
+    width: 60%;
+    background-color: #fff;
+}
+
+.body-right {
+    width: 40%;
+}
+
+.src-pages-Entry-index__logo-wrapper--IqLfz {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn-chat {
+    background-color: #d73211;
+    width: 30%;
+}
+
+.chat-icon {
+    width: 50px;
+    height: 50px;
+}

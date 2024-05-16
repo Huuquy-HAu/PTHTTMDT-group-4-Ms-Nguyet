@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.classOrder {
+  margin: 10px 20px;
+  border: none;
+}
+
+.header-order {
+  padding: 20px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.date-order {
+  padding: 0 15px;
+}
+
+/* .btn-product-delivery {
+  margin: 5px 20px ;
+  border-radius: 4px ;
+}
+.btn-product-delivery button{
+  padding: 0 20px;
+} */
+
+.input-selector{
+  display: flex;
+}
+
+.input-search-order input{
+  width: 100% ;
+  border-right: none;
+}
+
+.input-search-order button{
+  border-left: none;
+}
+
+.btn-report button{
+  padding: 0 20px;
+}
+
+#typeSeacher {
+  padding:  5px 10px;
+}
+
+#btn-search-product {
+  margin: 0 10px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #ee4d2d;
+  color: white;
+  font-size: small;
+}
+#btn-setAgain {
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-delivery {
+  padding: 20px;
+  display: flex;
+
+}
+
+.btn-delivery button{
+  justify-content: end;
+  margin: 0 10px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #ee4d2d;
+  color: white;
+}
+
+.list-header-order {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.list-header-order span {
+  padding-left: 50px;
+}
+
+#header-transport-order {
+  background-color: whitesmoke;
+  border: none ;
+}
+
+.order-list {
+  display: flex;
+  padding-left: 20px;
+}
+
+.order-list div{
+  padding: 20px;
+}
+
+.ant-input-search-order button {
+  display: block;
+}

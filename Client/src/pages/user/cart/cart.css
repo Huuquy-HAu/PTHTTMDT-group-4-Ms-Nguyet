@@ -1,0 +1,139 @@
+.cart-container {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.cart-container .ant-radio {
+  display: none;
+}
+
+.cart-list {
+  width: 100%;
+}
+
+.cart-list .ant-table .ant-table-thead {
+  width: 100% !important;
+}
+
+.cart-list .ant-table .ant-table-tbody {
+  width: 100% !important;
+}
+
+.cart-list .ant-table-content table tr th,
+td {
+  padding: 8px !important;
+}
+
+.cart-list .ant-table-cell {
+  text-align: center;
+}
+
+.code-box-demo .ant-select {
+  margin: 0 8px 10px 0;
+}
+
+.ant-row-rtl .code-box-demo .ant-select {
+  margin: 0 0 10px 8px;
+}
+
+#components-select-demo-search-box .code-box-demo .ant-select {
+  margin: 0;
+}
+
+.ant-select-selection-item-content {
+  background-color: #FB5430;
+  color: white;
+  padding: 0 5px;
+}
+
+
+.cart-voucher-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+}
+
+.cart-voucher {
+  margin-left: 50px;
+  width: 50%;
+}
+
+.cart-title h2 i {
+  color: #FB5430;
+}
+
+.cart-footer {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.cart-footer2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.cart-footer2 span {
+  margin: 0 10px;
+}
+
+.cart-footer2 .cart-price {
+  color: #FB5430;
+  font-size: 20px;
+}
+
+.cart-footer2 .ant-btn {
+  padding: 0 40px;
+  background-color: #FB5430;
+  border: none;
+}
+
+.cart-quanlity button {
+  padding: 0 10px;
+}
+
+.cart-quanlity input {
+  width: 35px;
+  text-align: center;
+  margin: 0 3px;
+}
+
+/* responsive */
+@media only screen and (max-width: 567px) {
+  .cart-list .ant-table-cell:nth-child(6) {
+    display: none;
+
+  }
+
+  .cart-list .ant-table-cell:nth-child(3) {
+    display: none;
+
+  }
+
+  .cart-list i {
+    font-size: 15px;
+  }
+
+  .cart-voucher {
+    margin-left: 5px;
+  }
+
+  .cart-footer {
+    margin: 10px 0px;
+  }
+
+  .cart-quanlity {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cart-quanlity .cart-quanlity-input,
+  .cart-quanlity-btn {
+    width: 31px;
+    height: 30px;
+  }
+
+  .cart-btn-sup {
+    margin-top: 5px;
+    width: 90%;
+  }
+}

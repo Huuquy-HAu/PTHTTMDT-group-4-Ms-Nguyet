@@ -1,0 +1,522 @@
+[
+  {
+    "_id": "pd1",
+    "status": "enable",
+    "listImg": [
+      "data:image/jpeg;base64,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"
+    ],
+    "productId": "p1",
+    "color": "blue",
+    "ram": "2GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 3000000
+  },
+  {
+    "_id": "pd2",
+    "status": "disable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/1/30/637476249030655365_asus-vivobook-a415-bac-800x800-1.jpg"
+    ],
+    "productId": "p2",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "256GB",
+    "storage": 15,
+    "price": 20000000
+  },
+  {
+    "_id": "pd3",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/7/637928113139382910_xiaomi-redmi-note-11-xanh-dd-logo.jpg"
+    ],
+    "productId": "p3",
+    "color": "blue",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 6000000
+  },
+  {
+    "_id": "pd4",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/28/637630626825942464_hp-pavilion-15-eg-bac-dd.jpg"
+    ],
+    "productId": "p4",
+    "color": "white",
+    "ram": "4GB",
+    "rom": "51GB",
+    "storage": 5,
+    "price": 16900000
+  },
+  {
+    "_id": "pd5",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/29/637947006257497678_hp-pavilion-15-eg-bac-2022-win11-dd.jpg"
+    ],
+    "productId": "p5",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "128GB",
+    "storage": 10,
+    "price": 13550000
+  },
+  {
+    "_id": "pd6",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone_xs_max_gold_2_1.jpg"
+    ],
+    "productId": "p6",
+    "color": "gold",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 10000000
+  },
+  {
+    "_id": "pd7",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone_xs_512gb_5.jpg"
+    ],
+    "productId": "p6",
+    "color": "black",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 6000000
+  },
+  {
+    "_id": "pd8",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone_13_green_pure_back_iphone_13_green_pure_front_2-up_screen__usen_1_1.png"
+    ],
+    "productId": "p7",
+    "color": "green",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 19000000
+  },
+  {
+    "_id": "pd9",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/p/iphone_13-_pro-5.jpg"
+    ],
+    "productId": "p7",
+    "color": "blue",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 19000000
+  },
+  {
+    "_id": "pd10",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/p/h/photo_2020-10-13_22-12-37.jpg_1_5.png"
+    ],
+    "productId": "p8",
+    "color": "gray",
+    "ram": "2GB",
+    "rom": "128GB",
+    "storage": 10,
+    "price": 16000000
+  },
+  {
+    "_id": "pd11",
+    "status": "enable",
+    "listImg": [
+      "https://cdn2.cellphones.com.vn/358x/media/catalog/product/p/h/photo_2020-10-13_22-12-24.jpg_1_3_1_4.png"
+    ],
+    "productId": "p8",
+    "color": "blue",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 16000000
+  },
+  {
+    "_id": "pd12",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/6/7/637902003522707463_macbook-air-m2-2022-vang-1.jpg"
+    ],
+    "productId": "p9",
+    "color": "yellow",
+    "ram": "16GB",
+    "rom": "256GB",
+    "storage": 10,
+    "price": 20000000
+  },
+  {
+    "_id": "pd13",
+    "status": "disable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/6/7/637901923612601202_macbook-air-m2-2022-den-1.jpg"
+    ],
+    "productId": "p9",
+    "color": "dark blue",
+    "ram": "16GB",
+    "rom": "256GB",
+    "storage": 10,
+    "price": 20000000
+  },
+  {
+    "_id": "pd14",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/8/637850092509770855_asus-tuf-gaming-fx506h-den-dd-rtx3050.jpg"
+    ],
+    "productId": "p10",
+    "color": "black",
+    "ram": "4GB",
+    "rom": "128GB",
+    "storage": 10,
+    "price": 16490000
+  },
+  {
+    "_id": "pd15",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/3/637583197352498860_hp-240-g8-bac-dd.jpg"
+    ],
+    "productId": "p11",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 11990000
+  },
+  {
+    "_id": "pd16",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/21/637861585273329317_lenovo-ideapad-5-15itl05-xam-dd-1.jpg"
+    ],
+    "productId": "p12",
+    "color": "black",
+    "ram": "8GB",
+    "rom": "512GB",
+    "storage": 10,
+    "price": 14990000
+  },
+  {
+    "_id": "pd17",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/11/18/637728579749020671_msi-modern-14-b5m-202vn-r5-5500u-xam-dd.jpg"
+    ],
+    "productId": "p13",
+    "color": "gray",
+    "ram": "16GB",
+    "rom": "128GB",
+    "storage": 3,
+    "price": 15090000
+  },
+  {
+    "_id": "pd18",
+    "status": "disable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/3/637583197352498860_hp-240-g8-bac-dd.jpg"
+    ],
+    "productId": "p14",
+    "color": "black",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 15,
+    "price": 16290000
+  },
+  {
+    "_id": "pd19",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/20/637650927789278219_asus-vivobook-a415-print-bac-dd.jpg"
+    ],
+    "productId": "p14",
+    "color": "white",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 16290000
+  },
+  {
+    "_id": "pd20",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/1/26/637788084553132269_msi-gf63-thin-den-dd.jpg"
+    ],
+    "productId": "p15",
+    "color": "black",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 20390000
+  },
+  {
+    "_id": "pd21",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/21/637546036311748554_ipad-pro-11-cell-xam-1.jpg"
+    ],
+    "productId": "p16",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "256GB",
+    "storage": 10,
+    "price": 19999000
+  },
+  {
+    "_id": "pd22",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/21/637546036311126524_ipad-pro-11-cell-bac-1.jpg"
+    ],
+    "productId": "p17",
+    "color": "silver",
+    "ram": "4GB",
+    "rom": "256GB",
+    "storage": 1,
+    "price": 19999000
+  },
+  {
+    "_id": "pd23",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/11/637931279963004703_samsung-galaxy-tab-s6-lite-2022-den-6.jpg"
+    ],
+    "productId": "p17",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "32GB",
+    "storage": 10,
+    "price": 8990000
+  },
+  {
+    "_id": "pd24",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/11/637931279965035868_samsung-galaxy-tab-s6-lite-2022-xanh-6.jpg"
+    ],
+    "productId": "p19",
+    "color": "blue",
+    "ram": "4GB",
+    "rom": "32GB",
+    "storage": 5,
+    "price": 8990000
+  },
+  {
+    "_id": "pd25",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673417056583747_ipad-10-2-2021-wi-fi-bac-1.jpg"
+    ],
+    "productId": "p18",
+    "color": "gray",
+    "ram": "16GB",
+    "rom": "256GB",
+    "storage": 20,
+    "price": 3000000
+  },
+  {
+    "_id": "pd26",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/17/637674929043970820_xiaomi-mi-pad-5-xam-1.jpg"
+    ],
+    "productId": "p19",
+    "color": "gray",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 11990000
+  },
+  {
+    "_id": "pd27",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2019/8/13/637012895387153282_SS-a10s-dd.png"
+    ],
+    "productId": "p20",
+    "color": "red",
+    "ram": "2GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 10490000
+  },
+  {
+    "_id": "pd28",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/21/637546058343075638_ipad-pro-12-9-wifi-xam-1.jpg"
+    ],
+    "productId": "p21",
+    "color": "silver",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 30,
+    "price": 25499000
+  },
+  {
+    "_id": "pd29",
+    "status": "disable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/2/9/637800453115752334_samsung-galaxy-s22-ultra-den-1.jpg"
+    ],
+    "productId": "p22",
+    "color": "black",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 20,
+    "price": 16990000
+  },
+  {
+    "_id": "pd30",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/2/9/637800435814436920_samsung-galaxy-s22-ultra-do-1.jpg"
+    ],
+    "productId": "p22",
+    "color": "red",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 16990000
+  },
+  {
+    "_id": "pd31",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/12/637853832932007647_oppo-reno7-4g-den-1.jpg"
+    ],
+    "productId": "p23",
+    "color": "black",
+    "ram": "16GB",
+    "rom": "256GB",
+    "storage": 15,
+    "price": 7990000
+  },
+  {
+    "_id": "pd32",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/12/637853832932320197_oppo-reno7-4g-cam-1.jpg"
+    ],
+    "productId": "p23",
+    "color": "orange",
+    "ram": "16GB",
+    "rom": "256GB",
+    "storage": 10,
+    "price": 7990000
+  },
+  {
+    "_id": "pd33",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/4/637925294823972014_samsung-galaxy-a53-xanh-dd-icon.jpg"
+    ],
+    "productId": "p24",
+    "color": "blue",
+    "ram": "8GB",
+    "rom": "128GB",
+    "storage": 32,
+    "price": 10490000
+  },
+  {
+    "_id": "pd34",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/25/637707822857276078_00779950-vivo-y15s-trang-xanh-1.jpg"
+    ],
+    "productId": "p25",
+    "color": "blue",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 0,
+    "price": 3090000
+  },
+  {
+    "_id": "pd35",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/10/25/637707824369475682_00779951-vivo-y15s--xanh-den-1.jpg"
+    ],
+    "productId": "p25",
+    "color": "dark blue",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 3090000
+  },
+  {
+    "_id": "pd36",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2019/9/11/637037652463173144_11-xanh.png"
+    ],
+    "productId": "p26",
+    "color": "green",
+    "ram": "16GB",
+    "rom": "128GB",
+    "storage": 10,
+    "price": 11499000
+  },
+  {
+    "_id": "pd37",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/25/637865016524506408_iphone-se-2022-trang-1.jpg"
+    ],
+    "productId": "p27",
+    "color": "white",
+    "ram": "4GB",
+    "rom": "64GB",
+    "storage": 2,
+    "price": 3000000
+  },
+  {
+    "_id": "pd38",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/4/637820159964576563_realme-9-pro-xanhla-1.jpg"
+    ],
+    "productId": "p28",
+    "color": "green",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 3,
+    "price": 6990000
+  },
+  {
+    "_id": "pd39",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/3/4/637820160843959470_realme-9-pro-xanhduong-1.jpg"
+    ],
+    "productId": "p28",
+    "color": "blue",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 6990000
+  },
+  {
+    "_id": "pd40",
+    "status": "enable",
+    "listImg": [
+      "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/4/12/637853607482187518_realme-c35-xanh-dd.jpg"
+    ],
+    "productId": "p29",
+    "color": "green",
+    "ram": "8GB",
+    "rom": "64GB",
+    "storage": 10,
+    "price": 4990000
+  }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "u1",
+        "role": "user",
+        "avatar": "https://64.media.tumblr.com/b21486111f59fc337d5aacffb69fd3ad/3e4b9bffcc0b93d5-2b/s640x960/287eadc3a74b892b1d438253fa2a8188e6d6ee49.jpg",
+        "dateOfBirth": "2001/06/15",
+        "sex": "female",
+        "username": "Hoài",
+        "fullname": "Nguyễn Thu Hoài",
+        "email": "hoai@gmail.com",
+        "password": "123456",
+        "phone": "0356987456"
+    },
+    {
+        "_id": "u2",
+        "role": "user",
+        "avatar": "data:image/jpeg;base64,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",
+        "dateOfBirth": "1998/04/20",
+        "sex": "male",
+        "username": "Nam",
+        "fullname": "Nguyễn Văn Nam",
+        "email": "nam@gmail.com",
+        "password": "123456",
+        "phone": "0346987456"
+    },
+    {
+        "_id": "u3",
+        "role": "user",
+        "avatar": "https://64.media.tumblr.com/1ce0049e77454bbdb3a988f1610c1356/e212d4773cb453b4-77/s1280x1920/b140294f831ea760dbbabf49c382a73a5add14d6.jpg",
+        "dateOfBirth": "2000/09/10",
+        "sex": "female",
+        "username": "Linh",
+        "fullname": "Phạm Thùy Linh",
+        "email": "linh@gmail.com",
+        "password": "123456",
+        "phone": "0359987456"
+    },
+    {
+        "_id": "u4",
+        "role": "user",
+        "avatar": "https://64.media.tumblr.com/4961e775d9e899c113d5f8703ad39e75/683b270f8ac89e3d-79/s640x960/9b9ad538e0d57661431ee84e168212908780dba7.jpg",
+        "dateOfBirth": "2003/12/15",
+        "sex": "female",
+        "username": "My",
+        "fullname": "Doãn Hải My",
+        "email": "my@gmail.com",
+        "password": "123456",
+        "phone": "0986987456"
+    },
+    {
+        "_id": "u5",
+        "role": "user",
+        "avatar": "https://i.vietgiaitri.com/2020/4/7/nam-sinh-17-tuoi-cao-1m80-so-huu-ngoai-hinh-dien-trai-053-4826653.jpeg",
+        "dateOfBirth": "2002/01/01",
+        "sex": "male",
+        "username": "Tiến",
+        "fullname": "Nguyễn Huy Tiến",
+        "email": "tien@gmail.com",
+        "password": "123456",
+        "phone": "0356987310"
+    }
+]

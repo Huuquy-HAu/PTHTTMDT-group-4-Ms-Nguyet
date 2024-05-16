@@ -1,0 +1,224 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+     .signin-shopee-svg-icon{
+     width: 11.875rem;
+     height: 42px;
+     fill: #111827;
+     margin-top: -5px;
+     }
+     .header-signin{
+       margin-top: 10px;
+     }
+     .signin-help{
+         color: #111827 !important;
+         font-size: .875rem;
+         margin-right: 15px;
+         cursor: pointer;
+         text-decoration: none;
+     }
+     .header-signin{
+       width: 1200px;
+       margin: 0 auto;
+       justify-content: space-between;
+       display: flex;
+       align-items: center;
+       margin-top: 20px;
+     }
+     .header-signin-left{
+       display: flex;
+       align-items: center;
+     }
+
+     .header-signin-left img {
+      width: 70px;
+     }
+     
+     .header-dang-ky{
+       font-size: 25px;
+       margin-left: 0px;
+     }
+     /* ==============content-signup====================== */
+     .content-signin{
+       background-color: #111827;
+       display: block;
+       height: 600px;
+       width: 100%;
+      margin-top: 10px;
+      position: relative;
+     }
+
+     .content-signin .img-logo {
+      width: 70%;
+      margin: auto;
+     }
+
+     .form-dang-nhap{
+       background-color: white;
+       width: 24.8125rem;;
+       height: 500px;
+       position: absolute;
+       right: 100px;
+       top: 50px;
+       border-radius: 10px;
+     }
+     .content-dang-nhap{
+       font-size: 20px;
+       padding: 1.375rem 1.875rem;
+     }
+     
+     .content-center {
+       padding: 0 1.875rem 1.875rem;
+       overflow: hidden;
+     }
+     
+     .password {
+          box-sizing: border-box;
+          width: 100%;
+          height: 2.5rem;
+          overflow: hidden;
+          border: 1px solid rgba(0,0,0,.14);
+          border-radius: 2px;
+          box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
+          margin-top: 20px;
+        }
+        .center-input-password {
+          padding: 8px;
+          outline: none;
+          border: 0;
+          width: 100%;
+        }
+        
+     .button-signin{
+         color: #fff;
+         background-color: #111827 !important;
+         border-color: #111827 !important;
+         width: 100%;
+         height: 2.5rem;
+         min-width: 8.75rem;
+         outline: none;
+         padding: 0 0.625rem;
+         border: 0;
+         border-radius: 0.125rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-transform: uppercase;
+         margin-bottom: 30px;
+         letter-spacing: 2px;
+         height: 40px !important;
+     }
+     .forgot{
+          display: flex;
+          justify-content: space-between;
+          margin-top: -20px;
+     }
+     .forgot a{
+          text-decoration: none;
+          font-size: 12px;
+          
+     }
+     .duong-ke{
+       display: flex;
+       align-items: center;
+       margin: 25px 0;
+     }
+     .ke-hr{
+         height: 1px;
+         width: 100%;
+         background-color: #dbdbdb;
+         flex: 1;
+     }
+     .hoac{
+         color: #ccc;
+         padding: 0 1rem;
+         text-transform: uppercase;
+         font-size: .75rem;
+     }
+     .signin-icon img{
+       width: 30px;
+     }
+     .signin-icon{
+       display: flex !important;
+       justify-content: space-between;
+       margin-top: 20px;
+     }
+     .signin-icon button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 8px;
+       width: 100%;
+       background-color: #fff;
+       outline: none;
+       border: 1px solid rgba(0,0,0,.26);
+     }
+     .signin-icon span{
+       margin-left: 10px;
+     }
+     .signin-icon .facebook{
+       margin-right: 10px;
+     }
+     .signin-icon .apple{
+          margin-left: 10px;
+     }
+     .cuoi-trang{
+         align-items: center;
+         display: flex;
+         justify-content: center;
+         margin: 50px 0;
+     }
+     .tai-khoan{
+       color: rgba(0,0,0,.26);
+     }
+     .dang-ky a{
+     color: #111827 !important;
+     margin-left: 5px;
+     text-decoration: none;
+     }
+     .ant-col-16{
+       max-width: 100% !important;
+    }
+    .content-center-input{
+        margin-bottom: 0 !important;
+       
+      }
+      .ant-input{
+        margin-bottom: 0;
+      }
+
+      /* ===========Responsive==================== */
+      @media screen and (max-width: 768px) {
+         .content-signin img{
+          display: none;
+        }
+        .content-signin{
+          padding-top: 40px;
+        }
+        .form-dang-nhap{
+          margin: auto;
+          position: unset;
+         margin-top: 10px;
+        }
+      }
+      @media screen and (max-width: 996px) {
+        .content-signin img{
+        display: none;
+        }
+       .content-signin{
+         padding-top: 40px;
+       }
+       .form-dang-nhap{
+         margin: auto;
+         position: unset;
+        margin-top: 10px;
+       }
+       .signin-icon img{
+        display: inline-block;
+       }
+      }
+        
+      

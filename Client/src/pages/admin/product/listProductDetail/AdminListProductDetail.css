@@ -1,0 +1,45 @@
+/* #ee4d2d */
+
+.adminListProductDetail {
+    padding: 15px;
+}
+
+
+
+.adminListProductDetail-header {
+    display: flex;
+    margin: 0 24px 24px 24px;
+    justify-content: space-between;
+}
+
+.adminListProductDetail-header-right button {
+    background: #ee4d2d ;
+    border: none;
+}
+
+.adminListProductDetail-header-right button:hover {
+    background: #ee4d2d ;
+}
+
+
+.adminListProductDetail-body .product {
+    padding: 25px 10px 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.adminListProductDetail-table {
+    border: 1px solid #e5e5e5;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.adminListProductDetail-table-header {
+    background:#f6f6f6 ;
+    padding: 8px 16px;
+}
+tr{
+    height: 100px !important;
+}

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-create-order{
+    margin-bottom: 88px;
+   
+}
+/* =========header================== */
+.header-create-order{
+    display: flex;
+    background-color: #ee4d2d;
+    justify-content: space-between;
+    padding: 8px;
+}
+.header-create-order-left ,
+.header-create-order-right{
+    display: flex;
+    margin: 0 10px;
+}
+.header-create-order-left a{
+    color: white;
+    text-decoration: none;
+    /* margin-left: 10px; */
+}
+.tai-ung-dung{
+    margin-left: 10px;
+    padding: 0 10px;
+    border-left: 2px solid #ccc ;
+    border-right: 2px solid #ccc ;
+}
+.ket-noi{
+    color: white;
+    margin-left: 10px;
+}
+.ket-noi span{
+    margin-left: 10px;
+}
+.header-create-order-right{
+    color: white;
+}
+.header-create-order-right span{
+    margin-right: 5px;
+}
+.thong-bao,
+.ho-tro{
+    margin-right: 10px;
+}
+/* ===========shop-create-order============ */
+.shop-create-order{
+    display: flex;
+    margin-bottom: 20px;
+}
+.shopeee-logo {
+    width: 11.875rem;
+    height: 42px;
+    fill: #ee4d2d;
+    margin-top: -5px;
+}
+.thanh-toan{
+    color: #ee4d2d;
+    margin-top: 30px;
+    border-left:2px solid #ee4d2d ;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ============describe-create-order=======================================*/
+.create-order-container-content{
+    /* background-color: #c4bebecc; */
+    padding-top: 1px;
+}
+.describe-create-order{
+    /* margin: 10px 30px; */
+    /* margin-top: 30px; */
+    background-color: white;
+    padding-bottom: 30px;
+}
+.border{
+    height: 3px;
+   width: 100%;
+   background-position-x: -30px;
+   background-size: 116px 3px;
+   background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
+}
+.dia-chi-nhan-hang {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    color: #ee4d2d;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    flex: 1 1 auto;
+    margin: 20px;
+}
+.icon-location-marker {
+    color: #ee4d2d;
+    fill: currentColor;
+    margin: 0 10px;
+}
+.personal-information{
+    display: flex;
+    margin-left: 30px;
+}
+.personal-information-name{
+    font-weight: 700;
+}
+.personal-information-address{
+    margin-left: 30px;
+    color: #aaa;
+}
+.mac-dinh{
+    padding: 2px 5px;
+   margin-left: 1.5em;
+   color: #ee4d2d;
+   border-radius: 1px;
+   border: 0.5px solid;
+   font-size: 10px;
+   text-transform: capitalize;
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   
+}
+.thay-doi{
+    color: #4080ee;
+   text-transform: capitalize;
+   margin-left: 2.5rem;
+   cursor: pointer;
+}
+/* =============================================== */
+.create-order-list img{
+   width: 150px;
+}
+.ant-row {
+   display: flex;
+   flex-flow: row wrap;
+   min-width: 0;
+
+}
+.create-order-title h1{
+   color: #ee4d2d;
+}
+.create-order-price span{
+   color: #ee4d2d;
+   font-size: 30px;
+   margin-left: 30px;
+}
+.create-order-product-mount{
+    margin-top: 20px;
+}
+.create-order-right{
+  display: flex;
+  justify-content: space-evenly;
+}
+.create-order-button{
+    background-color: #ee4d2d;
+    color: white;
+    float: right;
+    padding: 16px;
+    outline: none;
+    border: 0;
+    margin-right: 50px;
+}
+.personal-information .name{
+    margin-right: 20px;
+}
+
+ /* ===========Responsive==================== */
+ @media screen and (max-width: 560px) {
+    .shop-create-order{
+        display: none;
+    }
+    .border{
+        display: inline-block;
+        margin-top: 80px;
+    }
+    .thay-doi .ant-btn-primary{
+        display: inline-block;
+        background: #1890ff;
+        width: 70px;
+        padding: 0;
+    }
+    .mac-dinh{
+        display: none;
+    }
+    .create-order-button{
+        width: 100px;
+        height: 52px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    .create-order-product-mount{
+        display: none;
+    }
+   
+ }
+ @media screen and (max-width: 996px) {
+    .shop-create-order{
+        display: none;
+    }
+    .border{
+        display: inline-block;
+        margin-top: 60px;
+    }
+    .thay-doi .ant-btn-primary{
+        display: inline-block;
+        background: #1890ff;
+        width: 70px;
+        padding: 0;
+    }
+    /* .mac-dinh{
+        display: none;
+    } */
+    .create-order-button{
+        width: 100px;
+        height: 52px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+    .create-order-product-mount{
+        display: none;
+    }
+ }
+   
+ 
+
+
+

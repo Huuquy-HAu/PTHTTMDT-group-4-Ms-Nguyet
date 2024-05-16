@@ -1,0 +1,103 @@
+.classaddProduct{
+    margin: 20px;
+  }
+  
+.addProduct-header p {
+  color: rgb(138, 138, 138);
+}
+
+.search-product{
+  margin: 0 40px;
+  padding: 40px 20px;
+}
+
+.input-search input {
+  width: 100% !important;
+  border-radius: 20px !important;
+}
+
+.ant-input-group-addon button {
+  display: none;
+}
+.addProduct-body {
+  margin: 0 40px;
+  padding: 40px 20px;
+  background-color: whitesmoke;
+}
+
+.input-search{
+  padding: 40px 20px;
+}
+
+.btn-next button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #ee4d2d;
+  color: white;
+  font-size: medium;
+}
+
+.footer-addProduct {
+  margin: 20px 0;
+  margin-left: 50px;
+
+}
+
+.link-addProduct{
+  color: rgb(51, 51, 187) !important ;
+  text-decoration: underline;
+}
+
+  .chose-addProduct {
+    display: flex;
+  }
+  .chose-addProduct p {
+    color: #ee4d2d;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+.ant-input-search-order button {
+  display: block;
+}
+
+#btn-addProduct {
+  position: relative;
+  right: 300px;
+  padding: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #ee4d2d;
+  color: white;
+  font-size: medium;
+}
+
+#btn-addProduct span {
+  position: relative;
+  bottom: 13px;
+}
+
+.inp-search-addProduct{
+  position: relative;
+  right: 200px;
+}
+
+  .input-addProductName {
+    width: 800px;
+
+  } 
+
+  .inp-addBranch .ant-col-8 {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  .inp-addPriceProduct {
+    position: relative;
+    right: 255px;
+  }
+    
