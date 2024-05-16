@@ -204,7 +204,7 @@ function ListProduct() {
                     return(
                         <div className='Listproduct-product-card' key={index} >
                                 <Link to={`/product-detail/${value._id}`}>
-                                        <Card hoverable cover={<img alt="example" src={value.thumbnail.startsWith("http")?value.thumbnail:'https://shope-b3.thaihm.site/'+value.thumbnail}  className="card-listproduct"/>}>
+                                        <Card hoverable cover={<img alt="example" src={value.thumbnail.startsWith("http")?value.thumbnail:'http://localhost:8080/'+value.thumbnail}  className="card-listproduct"/>}>
                                             <Meta title={value.productName} description={value.price?value.price.toLocaleString()+"đ":"Het hang "} />
                                             </Card>
                                 </Link>

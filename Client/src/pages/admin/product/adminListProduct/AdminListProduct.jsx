@@ -47,7 +47,7 @@ function AdminListProduct() {
             newList.push(
               {
                 productName: value.productName,
-                thumbnail:value.thumbnail.startsWith('https')?  <Image className='preview-img' src={value.thumbnail} /> : <Image className='preview-img' src={`https://shope-b3.thaihm.site/${value.thumbnail}`} />,
+                thumbnail:value.thumbnail.startsWith('https')?  <Image className='preview-img' src={value.thumbnail} /> : <Image className='preview-img' src={`http://localhost:8080/${value.thumbnail}`} />,
                 brand: value.brand,
                 quantityProperty: value.listDtail.length,
                 type: value.categoryId.categoryName,

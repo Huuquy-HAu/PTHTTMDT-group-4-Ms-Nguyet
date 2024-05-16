@@ -212,7 +212,7 @@ function OrderDetail() {
                 <div className="order-product--detail">
                   <Fragment>
                     <div className="order-product-detail__img">
-                      <img src={(data.productDetailId?.productId.thumbnail.startsWith('https') ? data.productDetailId?.productId.thumbnail : 'https://shope-b3.thaihm.site/' + data.productDetailId?.productId.thumbnail)} alt="" />
+                      <img src={(data.productDetailId?.productId.thumbnail.startsWith('https') ? data.productDetailId?.productId.thumbnail : 'http://localhost:8080/' + data.productDetailId?.productId.thumbnail)} alt="" />
                     </div>
                     <div className="order-product-detail__name">
 

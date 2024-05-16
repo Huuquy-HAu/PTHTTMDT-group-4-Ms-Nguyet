@@ -163,7 +163,7 @@ function Home() {
               }}>
                 <div className="home_navbar-item-img">
                   <img
-                    src={"https://shope-b3.thaihm.site/" + item.thumbnail}
+                    src={"http://localhost:8080/" + item.thumbnail}
                     alt=""
                   />
                 </div>
@@ -223,7 +223,7 @@ function Home() {
                       src={
                         item.thumbnail.startsWith("https")
                           ? item.thumbnail
-                          : "https://shope-b3.thaihm.site/" + item.thumbnail
+                          : "http://localhost:8080/" + item.thumbnail
                       }
                       alt=""
                     />

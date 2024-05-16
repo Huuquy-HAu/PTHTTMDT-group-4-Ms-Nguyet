@@ -130,7 +130,7 @@ function CreateOrder() {
                 src={
                   value.productDetailId.productId.thumbnail.startsWith("https")
                     ? value.productDetailId.productId.thumbnail
-                    : "https://shope-b3.thaihm.site/" +
+                    : "http://localhost:8080/" +
                       value.productDetailId.productId.thumbnail
                 }
               />

@@ -32,7 +32,7 @@ function UserOrderItem(props) {
                                     <div className="order-product">
                                         <div className="order-product--detail">
                                             <div className="order-product__img">
-                                                <img src={(data.productDetailId?.productId.thumbnail.startsWith('https') ? data.productDetailId?.productId.thumbnail : 'https://shope-b3.thaihm.site/' + data.productDetailId?.productId.thumbnail)} alt="" />
+                                                <img src={(data.productDetailId?.productId.thumbnail.startsWith('https') ? data.productDetailId?.productId.thumbnail : 'http://localhost:8080/' + data.productDetailId?.productId.thumbnail)} alt="" />
                                             </div>
                                             <div className="order-product__name">
                                                 <h3>{data.productDetailId?.productId.productName}</h3>

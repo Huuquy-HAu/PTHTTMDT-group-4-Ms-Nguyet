@@ -122,7 +122,7 @@ function AdminOrderDetail() {
                               "https"
                             )
                               ? item.productDetailId.productId.thumbnail
-                              : "https://shope-b3.thaihm.site/" +
+                              : "http://localhost:8080/" +
                                 item.productDetailId.productId.thumbnail
                           }
                           alt=""

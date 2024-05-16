@@ -45,7 +45,7 @@ function Cart() {
                 key: value.productDetailId._id,
                 Name: value.productDetailId.productId.productName,
                 price: value.productDetailId.price,
-                listImg: `https://shope-b3.thaihm.site/${value.productDetailId.listImg[0]}`,
+                listImg: `http://localhost:8080/${value.productDetailId.listImg[0]}`,
                 stonge: value.quantity,
                 total: value.quantity * value.productDetailId.price,
                 select: value.select

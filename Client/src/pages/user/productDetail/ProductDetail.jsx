@@ -234,7 +234,7 @@ function ProductDetail() {
                     <img
                       onClick={showModal}
                       width={`100%`}
-                      src={`https://shope-b3.thaihm.site/${pdImg}`}
+                      src={`http://localhost:8080/${pdImg}`}
                     />
                   </div>
                   <div className="product-detail-list-img">
@@ -242,7 +242,7 @@ function ProductDetail() {
                       return (
                         <div>
                           <img
-                            src={`https://shope-b3.thaihm.site/${value}`}
+                            src={`http://localhost:8080/${value}`}
                             alt=""
                             onClick={showModal}
                             onMouseEnter={() => {
@@ -274,7 +274,7 @@ function ProductDetail() {
                                     <h3 style={contentStyle}>
                                       <img
                                         className="product-detail-carourel-left-img"
-                                        src={`https://shope-b3.thaihm.site/${value}`}
+                                        src={`http://localhost:8080/${value}`}
                                         alt=""
                                       />
                                     </h3>
@@ -295,7 +295,7 @@ function ProductDetail() {
                               return (
                                 <div className="product-detail-modal-img">
                                   <Image
-                                    src={`https://shope-b3.thaihm.site/${value}`}
+                                    src={`http://localhost:8080/${value}`}
                                     className="pd-item-img"
                                     width={80}
                                   />

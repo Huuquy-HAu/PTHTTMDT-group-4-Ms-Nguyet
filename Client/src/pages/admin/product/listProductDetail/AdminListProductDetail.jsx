@@ -230,7 +230,7 @@ function AdminListProductDetail() {
   // }
 
   const removeFile = async (e) => {
-    const linkRemove = e.url.split('https://shope-b3.thaihm.site/')[1];
+    const linkRemove = e.url.split('http://localhost:8080/')[1];
     try {
       let res = patchAPI('/productDetail/remove-product-detail-thumbs/'+idEdit, {path:linkRemove})
       console.log(res);

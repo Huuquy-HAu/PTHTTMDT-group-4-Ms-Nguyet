@@ -228,7 +228,7 @@ function Category() {
                     <div className="admin-category-item-img">
                       <Image
                         width={"100%"}
-                        src={"https://shope-b3.thaihm.site/" + item.thumbnail}
+                        src={"http://localhost:8080/" + item.thumbnail}
                       />
                     </div>
 
