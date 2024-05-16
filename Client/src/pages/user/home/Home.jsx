@@ -103,7 +103,7 @@ function Home() {
                 <div style={contentStyle}>
                   <img
                     className="home_banner-left-img"
-                    src="	https://cf.shopee.vn/file/4934a289e707bf4e3f0b4ff15da34bb5_xxhdpi"
+                    src="	https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/iphone-15-17390-sliding.png"
                     alt=""
                   />
                 </div>
@@ -112,7 +112,7 @@ function Home() {
                 <h3 style={contentStyle}>
                   <img
                     className="home_banner-left-img"
-                    src="	https://cf.shopee.vn/file/da1bd3e75f73fe83efe5c3f852359c34_xxhdpi"
+                    src="	https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/samsung-galaxy-sliding-s24-th4.png"
                     alt=""
                   />
                 </h3>
@@ -121,7 +121,7 @@ function Home() {
                 <h3 style={contentStyle}>
                   <img
                     className="home_banner-left-img"
-                    src="		https://cf.shopee.vn/file/74f86a460aeca99ca43d6863e1f039ae_xxhdpi"
+                    src="	https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/ipad-pro-m4-2024-11-5-2024.png"
                     alt=""
                   />
                 </h3>
@@ -130,7 +130,7 @@ function Home() {
                 <h3 style={contentStyle}>
                   <img
                     className="home_banner-left-img"
-                    src="		https://cf.shopee.vn/file/c16de52f3676f7aef4456acd862d3816_xxhdpi"
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/690x300.png"
                     alt=""
                   />
                 </h3>
@@ -145,11 +145,11 @@ function Home() {
           </div>
           <div className="home_banner-right">
             <img
-              src="https://cf.shopee.vn/file/50ef5b6c39d141b1163eee8261c6b99b_xhdpi"
+              src="https://images.fpt.shop/unsafe/fit-in/385x100/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/31/638475230865618761_H2_385x100.png"
               alt="banner"
             />
             <img
-              src="https://cf.shopee.vn/file/d30cf192dab75d7df1320bff5902ed0a_xhdpi"
+              src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/5/1/638501198735820217_F-H1_800x300.png"
               alt="banner"
             />
           </div>

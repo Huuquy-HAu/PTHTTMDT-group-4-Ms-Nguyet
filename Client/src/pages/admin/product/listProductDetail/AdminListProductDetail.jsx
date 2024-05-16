@@ -62,7 +62,7 @@ function AdminListProductDetail() {
 
   const getData = async () => {
     try {
-      let res = await axios.get('https://shope-b3.thaihm.site/api/productDetail/get-all-detail/product/' + productId)
+      let res = await axios.get('http://localhost:8080/api/productDetail/get-all-detail/product/' + productId)
       let url = res.data.productDetails[0].listImg[0]
       if (!url) {
         url = 'https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/a8/16/d6/a816d667-a1af-83c3-97ba-0152eb8fd205/AppIcon-1x_U007emarketing-0-5-0-0-85-220.png/1200x600wa.png'

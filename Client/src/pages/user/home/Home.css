@@ -85,7 +85,7 @@
 }
 
 .ant-carousel .slick-dots li.slick-active button {
-  background-color: #fb5430;
+  background-color: #111827;
 }
 
 .ant-carousel .slick-dots li button {
@@ -100,7 +100,7 @@
   border-radius: 50%;
   margin-left: 3px;
   margin-right: 3px;
-  background-color: #fb5430;
+  background-color: #111827;
 }
 
 .home_banner-right {
@@ -168,13 +168,13 @@
 }
 
 .home_product-heading h2 {
-  color: rgb(238, 77, 45);
+  color: #111827;
   margin-bottom: 0;
   font-size: 16px;
 }
 
 .tab-active {
-  border-bottom: 5px solid rgb(238, 77, 45);
+  border-bottom: 5px solid #111827;
 }
 
 .home_product-img {
