@@ -315,7 +315,7 @@ function Cart() {
                   <div className="cart-title">
                     <h2>
                       <i className="fa-solid fa-ticket"></i>{" "}
-                      <span>Shopee Voucher</span>
+                      <span>TruePhone Voucher</span>
                     </h2>
                   </div>
                   <div className="cart-voucher">

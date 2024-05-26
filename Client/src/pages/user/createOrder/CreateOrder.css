@@ -55,13 +55,13 @@
 .shopeee-logo {
     width: 11.875rem;
     height: 42px;
-    fill: #ee4d2d;
+    fill: #111827;
     margin-top: -5px;
 }
 .thanh-toan{
-    color: #ee4d2d;
+    color: #111827;
     margin-top: 30px;
-    border-left:2px solid #ee4d2d ;
+    border-left:2px solid #111827 ;
     padding-left: 30px;
     font-size: 20px;
     font-weight: 500;
@@ -95,7 +95,7 @@
     margin: 20px;
 }
 .icon-location-marker {
-    color: #ee4d2d;
+    color: #111827;
     fill: currentColor;
     margin: 0 10px;
 }
@@ -113,7 +113,7 @@
 .mac-dinh{
     padding: 2px 5px;
    margin-left: 1.5em;
-   color: #ee4d2d;
+   color: #111827;
    border-radius: 1px;
    border: 0.5px solid;
    font-size: 10px;
@@ -140,10 +140,10 @@
 
 }
 .create-order-title h1{
-   color: #ee4d2d;
+   color: #111827;
 }
 .create-order-price span{
-   color: #ee4d2d;
+   color: #111827;
    font-size: 30px;
    margin-left: 30px;
 }
@@ -155,7 +155,7 @@
   justify-content: space-evenly;
 }
 .create-order-button{
-    background-color: #ee4d2d;
+    background-color: #111827;
     color: white;
     float: right;
     padding: 16px;

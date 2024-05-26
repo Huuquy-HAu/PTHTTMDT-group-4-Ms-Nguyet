@@ -41,7 +41,7 @@ td {
 }
 
 .ant-select-selection-item-content {
-  background-color: #FB5430;
+  background-color: #111827;
   color: white;
   padding: 0 5px;
 }
@@ -59,7 +59,7 @@ td {
 }
 
 .cart-title h2 i {
-  color: #FB5430;
+  color: #111827;
 }
 
 .cart-footer {
@@ -83,7 +83,7 @@ td {
 
 .cart-footer2 .ant-btn {
   padding: 0 40px;
-  background-color: #FB5430;
+  background-color: #111827;
   border: none;
 }
 

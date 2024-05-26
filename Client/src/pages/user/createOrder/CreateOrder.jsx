@@ -2,14 +2,15 @@ import React from "react";
 import "./CreateOrder.css";
 import { useState, useEffect } from "react";
 import "antd/dist/antd.css";
-import { Col, Row, Table, Button, Popconfirm } from "antd";
+import { Col, Row, Table, Button, Popconfirm, Select } from "antd";
 import { Modal } from "antd";
 import { Form, Input } from "antd";
 import { getAPI, patchAPI, postAPI } from "../../../config/api";
 import { useSelector } from "react-redux";
 import { message } from "antd";
 import { useNavigate } from "react-router-dom";
-
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import PayPalPayment from "./PayPalPayment";
 const key = "updatable";
 
 function CreateOrder() {
@@ -22,6 +23,7 @@ function CreateOrder() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [delivery, setDelivery] = useState({});
   const [selected, setSelected] = useState();
+  const [valueOption, setValueOption] = useState(1);
 
   const handleDelete = (key) => {
     const newData = dataSource.filter((item) => item.key !== key);
@@ -181,11 +183,6 @@ function CreateOrder() {
 
   const user = useSelector((state) => state.user);
   const getAddress = () => {
-    // const addd = {
-    //   name: user.fullname,
-    //   phone: user.phone,
-    //   address: "A4/BT3 Ngõ 214 Nguyễn Xiển - Thanh Xuân - Hà Nội",
-    // };
     let local = localStorage.getItem("address");
     if (!local) {
       local = {};
@@ -268,9 +265,9 @@ function CreateOrder() {
     // }, 2000);
   };
 
+
   return (
     <div>
-      {/* <h1>CreateOrder</h1> */}
       <div className="container-create-order">
         <div className="header-create-order">
           <div className="header-create-order-left">
@@ -486,6 +483,37 @@ function CreateOrder() {
               </div>
             </div>
           </Col>
+        </Row>
+        <Row>
+          <Row>Lựa chọn phương thức thanh toán</Row>
+          <Row>
+            <Select
+              defaultValue={valueOption}
+              style={{
+                width: 250,
+              }}
+              onChange={(e) => {
+                setValueOption(e);
+              }}
+              options={[
+                {
+                  value: 1,
+                  label: "Nhận hàng rồi thanh toán ",
+                },
+                {
+                  value: 2,
+                  label: "Thanh toán Online",
+                },
+              ]}
+            />
+          </Row>
+          {valueOption == 2 ? (
+            <Row>
+              <PayPalPayment/>
+            </Row>
+          ) : (
+            ""
+          )}
         </Row>
 
         <button className="create-order-button" onClick={createOrder}>
