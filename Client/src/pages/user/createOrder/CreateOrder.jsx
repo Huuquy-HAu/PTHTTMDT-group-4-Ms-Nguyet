@@ -221,6 +221,15 @@ function CreateOrder() {
     }
   };
 
+  const createOrderMomo = async () => {
+    try {
+      const res = await postAPI('/momo/create_order');
+      window.open(res.payUrl, "_blank");
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   const PayPalPaymentButton = () => <PayPalPayment />;
   const CodPaymentButton = () => (
     <button className="create-order-button" onClick={createOrder}>
@@ -238,7 +247,7 @@ function CreateOrder() {
     </button>
   );
   const MomoPayButton = () => (
-    <button className="create-order-button" onClick={createOrder}>
+    <button className="create-order-button" onClick={createOrderMomo}>
       Momo{" "}
     </button>
   );

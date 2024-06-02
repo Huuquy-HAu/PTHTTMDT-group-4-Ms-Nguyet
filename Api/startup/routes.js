@@ -8,6 +8,7 @@ const productDetailRoute = require('../routes/productDetailRoute');
 const productRoute = require('../routes/productRoute');
 const paypalRoute = require('../routes/paypalPayment');
 const vnPayRoute = require('../routes/vnPayPaymentRoute');
+const momoRoute = require('../routes/momoPaymentRoute');
 
 router.use('/auth', authRoute);
 router.use('/user', userRoute);
@@ -18,5 +19,6 @@ router.use('/productDetail', productDetailRoute);
 router.use('/product', productRoute);
 router.use('/paypal', paypalRoute );
 router.use('/vnpay', vnPayRoute );
+router.use('/momo', momoRoute );
 
 module.exports = router;
