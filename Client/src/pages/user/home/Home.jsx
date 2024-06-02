@@ -188,7 +188,7 @@ function Home() {
               >
                 <h2>GỢI Ý HÔM NAY</h2>
               </div>
-              <div
+              {/* <div
                 className="home_product-img"
                 onClick={() => {
                   const tab1 = document.querySelector(".home_product-heading");
@@ -201,7 +201,7 @@ function Home() {
                   src="	https://cf.shopee.vn/file/e7a16381114a34167549a2dc88ccccdb"
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           ) : (
             <div className="user_home-all-container">

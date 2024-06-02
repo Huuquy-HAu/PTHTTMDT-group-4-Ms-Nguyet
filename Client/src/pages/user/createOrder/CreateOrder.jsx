@@ -11,6 +11,7 @@ import { message } from "antd";
 import { useNavigate } from "react-router-dom";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import PayPalPayment from "./PayPalPayment";
+import moment from "moment";
 const key = "updatable";
 
 function CreateOrder() {
@@ -30,62 +31,6 @@ function CreateOrder() {
     setDataSource(newData);
   };
 
-  // const onSelectChange = (newSelectedRowKeys) => {
-  //   console.log(25, "selectedRowKeys changed: ", newSelectedRowKeys);
-  //   let newDataSource = [...dataSource];
-  //   newDataSource.map((value) => {
-  //     value.select = false;
-  //   });
-  //   for (let i = 0; i < newSelectedRowKeys.length; i++) {
-  //     newDataSource[newSelectedRowKeys[i]].select = true;
-  //   }
-
-  //   setDataSource(newDataSource);
-  //   setSelectedRowKeys(newSelectedRowKeys);
-  //   setCount(newSelectedRowKeys.length);
-  // };
-
-  // const rowSelection = {
-  //   selectedRowKeys,
-  //   onChange: onSelectChange,
-  //   selections: [
-  //     Table.SELECTION_ALL,
-  //     Table.SELECTION_INVERT,
-  //     Table.SELECTION_NONE,
-  //     {
-  //       key: "odd",
-  //       text: "Select Odd Row",
-  //       onSelect: (changableRowKeys) => {
-  //         let newSelectedRowKeys = [];
-  //         newSelectedRowKeys = changableRowKeys.filter((_, index) => {
-  //           if (index % 2 !== 0) {
-  //             return false;
-  //           }
-
-  //           return true;
-  //         });
-  //         setSelectedRowKeys(newSelectedRowKeys);
-  //       },
-  //     },
-  //     {
-  //       key: "even",
-  //       text: "Select Even Row",
-  //       onSelect: (changableRowKeys) => {
-  //         let newSelectedRowKeys = [];
-
-  //         newSelectedRowKeys = changableRowKeys.filter((_, index) => {
-  //           if (index % 2 !== 0) {
-  //             return true;
-  //           }
-
-  //           return false;
-  //         });
-
-  //         setSelectedRowKeys(newSelectedRowKeys);
-  //       },
-  //     },
-  //   ],
-  // };
   const defaultColumns = [
     {
       title: "Tên Sản Phẩm",
@@ -265,6 +210,54 @@ function CreateOrder() {
     // }, 2000);
   };
 
+  const createOrderVNPay = async () => {
+    try {
+      const res = await postAPI("/vnpay/create_order");
+      if (res.status === 200) {
+        window.open(res.data.vnpUrl, "_blank");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const PayPalPaymentButton = () => <PayPalPayment />;
+  const CodPaymentButton = () => (
+    <button className="create-order-button" onClick={createOrder}>
+      Đặt hàng{" "}
+    </button>
+  );
+  const GooglePayButton = () => (
+    <button className="create-order-button" onClick={createOrder}>
+      GooglePay{" "}
+    </button>
+  );
+  const VNPayPayment = () => (
+    <button className="create-order-button" onClick={createOrderVNPay}>
+      VNPay{" "}
+    </button>
+  );
+  const MomoPayButton = () => (
+    <button className="create-order-button" onClick={createOrder}>
+      Momo{" "}
+    </button>
+  );
+
+  const buttons = [
+    CodPaymentButton,
+    PayPalPaymentButton,
+    VNPayPayment,
+    MomoPayButton,
+    GooglePayButton,
+  ];
+  const paymentComponents = {
+    1: CodPaymentButton,
+    2: PayPalPayment,
+    3: VNPayPayment,
+    4: MomoPayButton,
+    5: GooglePayButton,
+  };
+  const PaymentComponent = paymentComponents[valueOption];
 
   return (
     <div>
@@ -465,7 +458,7 @@ function CreateOrder() {
                     <div className="create-order-title">
                       <h1>
                         <i className="fa-solid fa-ticket"></i>{" "}
-                        <span>Shopee Voucher</span>
+                        <span>TruePhone Voucher</span>
                       </h1>
                     </div>
                   </div>
@@ -502,23 +495,25 @@ function CreateOrder() {
                 },
                 {
                   value: 2,
-                  label: "Thanh toán Online",
+                  label: "Thanh toán qua PayPal",
+                },
+                {
+                  value: 3,
+                  label: "Thanh toán qua VNPAY",
+                },
+                {
+                  value: 4,
+                  label: "Thanh toán qua Momo",
+                },
+                {
+                  value: 5,
+                  label: "Thanh toán qua GooglePay",
                 },
               ]}
             />
           </Row>
-          {valueOption == 2 ? (
-            <Row>
-              <PayPalPayment/>
-            </Row>
-          ) : (
-            ""
-          )}
         </Row>
-
-        <button className="create-order-button" onClick={createOrder}>
-          Đặt hàng
-        </button>
+        {PaymentComponent && <PaymentComponent />}
       </div>
     </div>
   );
