@@ -7,6 +7,7 @@ const orderRoute = require('../routes/orderRoute');
 const productDetailRoute = require('../routes/productDetailRoute');
 const productRoute = require('../routes/productRoute');
 const paypalRoute = require('../routes/paypalPayment');
+const vnPayRoute = require('../routes/vnPayPaymentRoute');
 
 router.use('/auth', authRoute);
 router.use('/user', userRoute);
@@ -16,5 +17,6 @@ router.use('/order', orderRoute);
 router.use('/productDetail', productDetailRoute);
 router.use('/product', productRoute);
 router.use('/paypal', paypalRoute );
+router.use('/vnpay', vnPayRoute );
 
 module.exports = router;
