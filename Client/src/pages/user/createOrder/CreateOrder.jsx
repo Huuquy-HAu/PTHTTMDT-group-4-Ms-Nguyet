@@ -224,7 +224,7 @@ function CreateOrder() {
   const createOrderMomo = async () => {
     try {
       const res = await postAPI('/momo/create_order');
-      window.open(res.payUrl, "_blank");
+      window.open(res.data.payUrl, "_blank");
     } catch (error) {
       console.log(error)
     }
