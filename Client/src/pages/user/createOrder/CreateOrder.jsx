@@ -95,7 +95,7 @@ function CreateOrder() {
     }
   }
 
-  async function createOrder() {
+  async function createOrder(paymentType) {
     const local = localStorage.getItem("address");
     const parserr = JSON.parse(local);
     const phoneNumber = parserr.phone;
@@ -105,6 +105,7 @@ function CreateOrder() {
       data: dataSource,
       phone: phoneNumber,
       address: addRess,
+      paymentType: paymentType
     };
     // console.log(obj);
     try {
@@ -212,7 +213,7 @@ function CreateOrder() {
 
   const createOrderVNPay = async () => {
     try {
-      const res = await postAPI("/vnpay/create_order");
+      const res = await postAPI("/vnpay/create_order", {newTotal});
       if (res.status === 200) {
         window.open(res.data.vnpUrl, "_blank");
       }
@@ -230,25 +231,34 @@ function CreateOrder() {
     }
   }
 
-  const PayPalPaymentButton = () => <PayPalPayment />;
+  const createOrderZalo = () => {
+
+  }
+
+  const PayPalPaymentButton = () => <PayPalPayment/>;
   const CodPaymentButton = () => (
-    <button className="create-order-button" onClick={createOrder}>
+    <button className="create-order-button" onClick={() => createOrder("COD")}>
       Đặt hàng{" "}
     </button>
   );
   const GooglePayButton = () => (
-    <button className="create-order-button" onClick={createOrder}>
+    <button className="create-order-button" onClick={() => createOrder}>
       GooglePay{" "}
     </button>
   );
   const VNPayPayment = () => (
-    <button className="create-order-button" onClick={createOrderVNPay}>
+    <button className="create-order-button" onClick={() => createOrderVNPay()}>
       VNPay{" "}
     </button>
   );
   const MomoPayButton = () => (
-    <button className="create-order-button" onClick={createOrderMomo}>
+    <button className="create-order-button" onClick={() => createOrderMomo}>
       Momo{" "}
+    </button>
+  );
+  const ZaloPayButton = () => (
+    <button className="create-order-button" onClick={() => createOrderZalo}>
+      Zalo{" "}
     </button>
   );
 
@@ -258,6 +268,7 @@ function CreateOrder() {
     VNPayPayment,
     MomoPayButton,
     GooglePayButton,
+    ZaloPayButton
   ];
   const paymentComponents = {
     1: CodPaymentButton,
@@ -265,6 +276,7 @@ function CreateOrder() {
     3: VNPayPayment,
     4: MomoPayButton,
     5: GooglePayButton,
+    6: ZaloPayButton
   };
   const PaymentComponent = paymentComponents[valueOption];
 
@@ -517,6 +529,10 @@ function CreateOrder() {
                 {
                   value: 5,
                   label: "Thanh toán qua GooglePay",
+                },
+                {
+                  value: 6,
+                  label: "Thanh toán qua ZaloPay",
                 },
               ]}
             />

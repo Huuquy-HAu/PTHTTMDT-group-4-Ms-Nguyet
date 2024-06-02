@@ -4,14 +4,14 @@ const Order = require('../models/Order')
 
 exports.createOrder = async (req, res) => {
     try {
-        const {phone, address} = req.body;
+        const {phone, address , paymentType } = req.body;
 
         const cart = await Cart.findOne({userId: req.user._id});
         let listProduct = cart.listProduct.filter((product) => product.select);
         let listRemain = cart.listProduct.filter((product) => !product.select);
 
         if(!listProduct.length) return res.status(400).json({message: 'please select product'});
-        const order = await Order.create({userId: req.user._id, phone, address, listProduct});
+        const order = await Order.create({userId: req.user._id, phone, address, listProduct , paymentType});
         await Cart.findOneAndUpdate({userId: req.user._id}, {listProduct: listRemain}, {new: true, runValidators: true});
         res.status(200).json({order});
     } catch (error) {

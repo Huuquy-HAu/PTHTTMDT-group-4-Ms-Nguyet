@@ -4,27 +4,15 @@ import { postAPI } from "../../../config/api";
 import axios from "axios";
 
 function PayPalPayment() {
-
+  const initialOptions = {
+    clientId:
+      "AfYToC6DHtj7SjTIw9U53WnUB8-ndpxX7LZJKYWl4LfVxyY1T3W0Ud0uMcAYB6zbY0peaduRZPtjb9so",
+    currency: "USD",
+    intent: "capture",
+  };
 
   const createOrder = async () => {
     try {
-      // const response = await fetch(
-      //   "http://localhost:8080/api/paypal/my-server/create-paypal-order",
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     // use the "body" param to optionally pass additional order information
-      //     // like product ids and quantities
-      //     body: JSON.stringify({
-      //       product: {
-      //         description: "Thanh toán qua PayPal",
-      //         price: "101.00",
-      //       },
-      //     }),
-      //   }
-      // );
       const response = await axios.post("http://localhost:8080/api/paypal/my-server/create-paypal-order", 
         {
           product: {

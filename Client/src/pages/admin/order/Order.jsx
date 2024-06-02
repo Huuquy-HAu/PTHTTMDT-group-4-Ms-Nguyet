@@ -84,11 +84,8 @@ function Order() {
     const elementOrder = getOrder[i];
     for (let j = 0; j < getUser.length; j++) {
       const elementUser = getUser[j];
-      // console.log(55 ,elementOrder.userId._id);
-      // console.log(56 , elementUser._id);
       if (elementOrder.userId._id === elementUser._id) {
-        elementOrder.userName = elementUser.fullname;
-        elementOrder.phone = elementUser.phone;
+        elementOrder.userName = elementUser.username;
       }
     }
   }
@@ -135,7 +132,6 @@ function Order() {
   }
 
   async function onChangeStatus(e) {
-    // console.log('e', e.target.id);
     const id = e.target.id;
     const value = e.target.value;
     setChangeStatus(value);
@@ -145,7 +141,6 @@ function Order() {
       });
       setTest(test + 1);
 
-      // console.log(127, res.data.order);
     } catch (error) {
       console.log(error);
     }
@@ -168,13 +163,6 @@ function Order() {
       title: "User Name",
       dataIndex: "userName",
       key: "userName",
-      // filteredValue: [searchValue],
-      // onFilter: (value , record) => {
-      //   console.log(165 , record);
-      //   if(valueSelect == 'fullname' || valueSelect == ''){
-      //     return record.userName.toLowerCase().includes(value.toLowerCase())
-      //   }
-      // }
     },
     {
       title: "total",
@@ -192,7 +180,7 @@ function Order() {
       dataIndex: "phone",
       filteredValue: [searchValue],
       onFilter: (value, record) => {
-        if (valueSelect == "phone" || valueSelect == "") {
+        if (valueSelect == "phone" || valueSelect == "" ) {
           if (record.phone) {
             return record.phone.toLowerCase().includes(value.toLowerCase());
           }
@@ -210,7 +198,6 @@ function Order() {
       },
       filteredValue: [selectDate],
       onFilter: (value, record) => {
-        // console.log('value' , value);
         let down = new Date(value.split(",")[0]);
         let up = new Date(value.split(",")[1]);
         let current = new Date(record.createdAt);
@@ -237,7 +224,6 @@ function Order() {
                 marginTop: "10vh",
               },
             });
-            // console.log(127, res.data.order);
           } catch (error) {
             console.log(error);
           }
@@ -329,7 +315,16 @@ function Order() {
           </button>
         </div>
       </div>
-      <Table columns={columns} dataSource={getOrder} />
+      {getOrder ? 
+      <Table dataSource={getOrder} columns={columns}  />
+    :""
+    }
+
+    {getOrder.map(value => {
+      return(
+        <p>{value._id}</p>
+      )
+    })}
     </div>
   );
 }

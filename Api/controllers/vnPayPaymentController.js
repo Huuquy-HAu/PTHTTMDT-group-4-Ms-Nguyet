@@ -26,7 +26,7 @@ exports.hashSecretKey = (req, res) => {
   let vnpUrl = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
   let returnUrl = "http://localhost:3000/user/order";
   let orderId = moment(date).format("DDHHmmss");
-  let amount = 1000000;
+  let amount = req.body.newTotal || 0;
   let bankCode = "NCB";
 
   let locale = "vn";

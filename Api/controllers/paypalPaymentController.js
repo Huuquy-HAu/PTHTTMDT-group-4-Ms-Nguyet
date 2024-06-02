@@ -1,6 +1,8 @@
 
 const axios = require('axios')
-
+const base = "https://api-m.sandbox.paypal.com"
+const PAYPAL_CLIENT_ID = "AfYToC6DHtj7SjTIw9U53WnUB8-ndpxX7LZJKYWl4LfVxyY1T3W0Ud0uMcAYB6zbY0peaduRZPtjb9so"
+const PAYPAL_CLIENT_SECRET =  "EINdfZ2Z74VlGFlnA2pfUzrSaCFpRj16ffs-j9nocc-Ehor64KVq5Hgh7oymNjHXKj0GZQ8k9uv4C2PH"
 const generateAccessToken = async () => {
   try {
     if (!PAYPAL_CLIENT_ID || !PAYPAL_CLIENT_SECRET) {
@@ -34,7 +36,6 @@ const generateAccessToken = async () => {
 
 exports.createOrder = async (req, res) => {
   const accessToken = await generateAccessToken();
-  console.log(accessToken)
   const url = `${base}/v2/checkout/orders`;
   const payload = {
     intent: "CAPTURE",
